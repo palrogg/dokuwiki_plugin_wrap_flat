@@ -2,6 +2,8 @@
 Screen and Print Styles for the Wrap Plugin
 ********************************************************************/
 
+@mobile: ~"only screen and (max-width: 768px)";
+
 .dokuwiki {
 
 /* resetting the box model to something more sane makes life a whole lot easier */
@@ -131,6 +133,12 @@ Screen and Print Styles for the Wrap Plugin
     column-width: 30em;
 }
 
+@media only screen and (max-width: 768px) {
+    /* Max 1 column on mobile */
+    [class*="wrap_col"] {
+      column-count: 1;
+    }
+  }
 
 /* widths
 ********************************************************************/
@@ -250,7 +258,7 @@ Screen and Print Styles for the Wrap Plugin
 /* (only for modern browsers) */
 
 div.wrap_round {
-    border-radius: 1.4em;
+    border-radius: 5px;
 }
 span.wrap_round {
     border-radius: .14em;
