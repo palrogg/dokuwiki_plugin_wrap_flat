@@ -1,6 +1,7 @@
 /********************************************************************
 Screen Styles for the Wrap Plugin (additional to all.css)
 ********************************************************************/
+@mobile: ~"only screen and (max-width: 768px)";
 
 .dokuwiki {
   /* box
@@ -47,6 +48,9 @@ Screen Styles for the Wrap Plugin (additional to all.css)
     background-position: 10px 50%;
     background-repeat: no-repeat;
     background-size: 40px 40px;
+    @media (max-width: 768px) {
+      background-size: 30px 30px !important;
+    }
     color: inherit;
     overflow: hidden;
   }
@@ -98,7 +102,7 @@ Screen Styles for the Wrap Plugin (additional to all.css)
   div.wrap_info {
     background-image: url(images/note/svg/info.svg);
   }
-   span.wrap_info {
+  span.wrap_info {
     background-image: url(images/note/svg/info.png);
     background-size: 16px 16px;
   }
