@@ -1,5 +1,5 @@
-Warp plugin with flat icons.
+### Warp plugin with flat icons.
 
-Icons: (https://icons.getbootstrap.com/)[Bootstrap Icons]
+Icons: [Bootstrap Icons](https://icons.getbootstrap.com/)
 
 Warp plugin: see plugin.info.txt
